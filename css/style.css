@@ -41,7 +41,7 @@ a {
 }
 
 body {
-  background: rgb(179, 163, 18);
+  background: rgba(179, 163, 18, 0.61);
 }
 
 #delivery-grid {
@@ -83,10 +83,14 @@ button {
 
 #counts-label {
   font-size: 40px;
+  font-family: Hanalei Fill;
 }
 
-#regular-eel {
+#fish-counts {
+  display: grid;
+  grid-template-columns: repeat(2, 35vw);
   font-size: 30px;
+  font-family: Hanalei Fill;
 }
 
 @media (max-width: 1005px) {
