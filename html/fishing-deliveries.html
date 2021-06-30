@@ -16,14 +16,16 @@
   <p id="title">Assassin's Creed Valhalla</p>
   <p id="sub-title">Hunting and Fishing Checklists</p>
   <div id="nav-bar">
-    <a href="fishing-deliveries.html" class="nav-link">Fishing Deliveries</a>
-    <a href="#counts-label" class="nav-link">Total Fish Counts</a>
-    <a href="hunting-deliveries.html" class="nav-link">Hunting Deliveries</a>
-    <a href="hunting-totals.html" class="nav-link">Total Hunting Counts</a>
+    <a href="fishing-deliveries.html" class="nav-link">Fishing</a>
+    <a href="hunting-deliveries.html" class="nav-link">Hunting</a>
     <a href="locations-of-fish.html" class="nav-link">Where to Find Fish</a>
   </div>
 </header>
 
+<div id="delivery-label-box" class="label-box">
+  <p id="delivery-label">Deliveries</p> 
+  <a href="#counts-label" class="nav-link-label">Total Fish Counts</a>
+</div>
 <div id="delivery-grid">
   <div class="delivery-box">
     <p class="delivery-label">The Farmer's Feast</p>
@@ -109,18 +111,18 @@
     <p class="delivery-label">Farmer's Fish Food</p>
     <button class="btn" id="farmer-1">2 Big Salmon</button>
     <button class="btn" id="farmer-2">4 Regular Bream</button>
-    <button class="btn" id="farmer-3">3 Regular Gray Trout</button>
+    <button class="btn" id="farmer-3">3 Regular Grey Trout</button>
     <button class="btn" id="farmer-4">5 Small Sturgeon</button>
   </div>
   <div class="delivery-box">
     <p class="delivery-label">Salves and Potions</p>
-    <button class="btn" id="salve-1">2 Big Gray Trout</button>
+    <button class="btn" id="salve-1">2 Big Grey Trout</button>
     <button class="btn" id="salve-2">3 Regular Redfish</button>
   </div>
   <div class="delivery-box">
     <p class="delivery-label">Scaling Up</p>
     <button class="btn" id="scaling-1">2 Big Sturgeon</button>
-    <button class="btn" id="scaling-2">2 Regular Gray Trout</button>
+    <button class="btn" id="scaling-2">2 Regular Grey Trout</button>
     <button class="btn" id="scaling-3">3 Regular Mackerel</button>
   </div>
   <div class="delivery-box">
@@ -145,101 +147,104 @@
   </div>
 </div>
 
-<p id="counts-label">Total Fish Needed</p>
-  <div id="fish-counts">
-    <p class="fish-count-label">Regular Arctic Char:</p>
-    <p class="fish-count-number" id="regular-arctic-char-number"></p>
-    <p class="fish-count-label">Big Arctic Char:</p>
-    <p class="fish-count-number" id="big-arctic-char-number"></p>
-    <p class="fish-count-label">Small Bream:</p>
-    <p class="fish-count-number" id="small-bream-number"></p>
-    <p class="fish-count-label">Regular Bream:</p>
-    <p class="fish-count-number" id="regular-bream-number"></p>
-    <p class="fish-count-label">Big Bream:</p>
-    <p class="fish-count-number" id="big-bream-number"></p>
-    <p class="fish-count-label">Small Brown Trout:</p>
-    <p class="fish-count-number" id="small-brown-trout-number"></p>
-    <p class="fish-count-label">Regular Brown Trout:</p>
-    <p class="fish-count-number" id="regular-brown-trout-number"></p>
-    <p class="fish-count-label">Big Brown Trout:</p>
-    <p class="fish-count-number" id="big-brown-trout-number"></p>
-    <p class="fish-count-label">Small Bullhead:</p>
-    <p class="fish-count-number" id="small-bullhead-number"></p>
-    <p class="fish-count-label">Regular Bullhead:</p>
-    <p class="fish-count-number" id="regular-bullhead-number"></p>
-    <p class="fish-count-label">Big Bullhead:</p>
-    <p class="fish-count-number" id="big-bullhead-number"></p>
-    <p class="fish-count-label">Regular Burbot:</p>
-    <p class="fish-count-number" id="regular-burbot-number"></p>
-    <p class="fish-count-label">Big Burbot:</p>
-    <p class="fish-count-number" id="big-burbot-number"></p>
-    <p class="fish-count-label">Regular Cod:</p>
-    <p class="fish-count-number" id="regular-cod-number"></p>
-    <p class="fish-count-label">Big Cod:</p>
-    <p class="fish-count-number" id="big-cod-number"></p>
-    <p class="fish-count-label">Small Eel:</p>
-    <p class="fish-count-number" id="small-eel-number"></p>
-    <p class="fish-count-label">Regular Eel:</p>
-    <p class="fish-count-number" id="regular-eel-number"></p>
-    <p class="fish-count-label">Regular Flatfish:</p>
-    <p class="fish-count-number" id="regular-flatfish-number"></p>
-    <p class="fish-count-label">Big Flatfish:</p>
-    <p class="fish-count-number" id="big-flatfish-number"></p>
-    <p class="fish-count-label">Regular Gray Trout:</p>
-    <p class="fish-count-number" id="regular-gray-trout-number"></p>
-    <p class="fish-count-label">Big Gray Trout:</p>
-    <p class="fish-count-number" id="big-gray-trout-number"></p>
-    <p class="fish-count-label">Small Haddock:</p>
-    <p class="fish-count-number" id="small-haddock-number"></p>
-    <p class="fish-count-label">Regular Haddock:</p>
-    <p class="fish-count-number" id="regular-haddock-number"></p>
-    <p class="fish-count-label">Big Haddock:</p>
-    <p class="fish-count-number" id="big-haddock-number"></p>
-    <p class="fish-count-label">Regular Hake:</p>
-    <p class="fish-count-number" id="regular-hake-number"></p>
-    <p class="fish-count-label">Big Hake:</p>
-    <p class="fish-count-number" id="big-hake-number"></p>
-    <p class="fish-count-label">Regular Halibut:</p>
-    <p class="fish-count-number" id="regular-halibut-number"></p>
-    <p class="fish-count-label">Big Halibut:</p>
-    <p class="fish-count-number" id="big-halibut-number"></p>
-    <p class="fish-count-label">Regular Mackerel:</p>
-    <p class="fish-count-number" id="regular-mackerel-number"></p>
-    <p class="fish-count-label">Big Mackerel:</p>
-    <p class="fish-count-number" id="big-mackerel-number"></p>
-    <p class="fish-count-label">Small Perch:</p>
-    <p class="fish-count-number" id="small-perch-number"></p>
-    <p class="fish-count-label">Regular Perch:</p>
-    <p class="fish-count-number" id="regular-perch-number"></p>
-    <p class="fish-count-label">Big Perch:</p>
-    <p class="fish-count-number" id="big-perch-number"></p>
-    <p class="fish-count-label">Small Pollock:</p>
-    <p class="fish-count-number" id="small-pollock-number"></p>
-    <p class="fish-count-label">Regular Pollock:</p>
-    <p class="fish-count-number" id="regular-pollock-number"></p>
-    <p class="fish-count-label">Big Pollock:</p>
-    <p class="fish-count-number" id="big-pollock-number"></p>
-    <p class="fish-count-label">Regular Redfish:</p>
-    <p class="fish-count-number" id="regular-redfish-number"></p>
-    <p class="fish-count-label">Big Redfish:</p>
-    <p class="fish-count-number" id="big-redfish-number"></p>
-    <p class="fish-count-label">Regular Salmon:</p>
-    <p class="fish-count-number" id="regular-salmon-number"></p>
-    <p class="fish-count-label">Big Salmon:</p>
-    <p class="fish-count-number" id="big-salmon-number"></p>
-    <p class="fish-count-label">Regular Shad:</p>
-    <p class="fish-count-number" id="regular-shad-number"></p>
-    <p class="fish-count-label">Big Shad:</p>
-    <p class="fish-count-number" id="big-shad-number"></p>
-    <p class="fish-count-label">Small Sturgeon:</p>
-    <p class="fish-count-number" id="small-sturgeon-number"></p>
-    <p class="fish-count-label">Regular Sturgeon:</p>
-    <p class="fish-count-number" id="regular-sturgeon-number"></p>
-    <p class="fish-count-label">Big Sturgeon:</p>
-    <p class="fish-count-number" id="big-sturgeon-number"></p>
-  </div>
+<div id="counts-label-box" class="label-box">
+  <p id="counts-label">Total Fish Needed</p>
+  <a href="#delivery-label" class="nav-link-label">Deliveries</a>
+</div>
+<div id="counts">
+  <p class="delivery-count-label">Regular Arctic Char:</p>
+  <p class="delivery-count-number" id="regular-arctic-char-number"></p>
+  <p class="delivery-count-label">Big Arctic Char:</p>
+  <p class="delivery-count-number" id="big-arctic-char-number"></p>
+  <p class="delivery-count-label">Small Bream:</p>
+  <p class="delivery-count-number" id="small-bream-number"></p>
+  <p class="delivery-count-label">Regular Bream:</p>
+  <p class="delivery-count-number" id="regular-bream-number"></p>
+  <p class="delivery-count-label">Big Bream:</p>
+  <p class="delivery-count-number" id="big-bream-number"></p>
+  <p class="delivery-count-label">Small Brown Trout:</p>
+  <p class="delivery-count-number" id="small-brown-trout-number"></p>
+  <p class="delivery-count-label">Regular Brown Trout:</p>
+  <p class="delivery-count-number" id="regular-brown-trout-number"></p>
+  <p class="delivery-count-label">Big Brown Trout:</p>
+  <p class="delivery-count-number" id="big-brown-trout-number"></p>
+  <p class="delivery-count-label">Small Bullhead:</p>
+  <p class="delivery-count-number" id="small-bullhead-number"></p>
+  <p class="delivery-count-label">Regular Bullhead:</p>
+  <p class="delivery-count-number" id="regular-bullhead-number"></p>
+  <p class="delivery-count-label">Big Bullhead:</p>
+  <p class="delivery-count-number" id="big-bullhead-number"></p>
+  <p class="delivery-count-label">Regular Burbot:</p>
+  <p class="delivery-count-number" id="regular-burbot-number"></p>
+  <p class="delivery-count-label">Big Burbot:</p>
+  <p class="delivery-count-number" id="big-burbot-number"></p>
+  <p class="delivery-count-label">Regular Cod:</p>
+  <p class="delivery-count-number" id="regular-cod-number"></p>
+  <p class="delivery-count-label">Big Cod:</p>
+  <p class="delivery-count-number" id="big-cod-number"></p>
+  <p class="delivery-count-label">Small Eel:</p>
+  <p class="delivery-count-number" id="small-eel-number"></p>
+  <p class="delivery-count-label">Regular Eel:</p>
+  <p class="delivery-count-number" id="regular-eel-number"></p>
+  <p class="delivery-count-label">Regular Flatfish:</p>
+  <p class="delivery-count-number" id="regular-flatfish-number"></p>
+  <p class="delivery-count-label">Big Flatfish:</p>
+  <p class="delivery-count-number" id="big-flatfish-number"></p>
+  <p class="delivery-count-label">Regular Grey Trout:</p>
+  <p class="delivery-count-number" id="regular-gray-trout-number"></p>
+  <p class="delivery-count-label">Big Grey Trout:</p>
+  <p class="delivery-count-number" id="big-gray-trout-number"></p>
+  <p class="delivery-count-label">Small Haddock:</p>
+  <p class="delivery-count-number" id="small-haddock-number"></p>
+  <p class="delivery-count-label">Regular Haddock:</p>
+  <p class="delivery-count-number" id="regular-haddock-number"></p>
+  <p class="delivery-count-label">Big Haddock:</p>
+  <p class="delivery-count-number" id="big-haddock-number"></p>
+  <p class="delivery-count-label">Regular Hake:</p>
+  <p class="delivery-count-number" id="regular-hake-number"></p>
+  <p class="delivery-count-label">Big Hake:</p>
+  <p class="delivery-count-number" id="big-hake-number"></p>
+  <p class="delivery-count-label">Regular Halibut:</p>
+  <p class="delivery-count-number" id="regular-halibut-number"></p>
+  <p class="delivery-count-label">Big Halibut:</p>
+  <p class="delivery-count-number" id="big-halibut-number"></p>
+  <p class="delivery-count-label">Regular Mackerel:</p>
+  <p class="delivery-count-number" id="regular-mackerel-number"></p>
+  <p class="delivery-count-label">Big Mackerel:</p>
+  <p class="delivery-count-number" id="big-mackerel-number"></p>
+  <p class="delivery-count-label">Small Perch:</p>
+  <p class="delivery-count-number" id="small-perch-number"></p>
+  <p class="delivery-count-label">Regular Perch:</p>
+  <p class="delivery-count-number" id="regular-perch-number"></p>
+  <p class="delivery-count-label">Big Perch:</p>
+  <p class="delivery-count-number" id="big-perch-number"></p>
+  <p class="delivery-count-label">Small Pollock:</p>
+  <p class="delivery-count-number" id="small-pollock-number"></p>
+  <p class="delivery-count-label">Regular Pollock:</p>
+  <p class="delivery-count-number" id="regular-pollock-number"></p>
+  <p class="delivery-count-label">Big Pollock:</p>
+  <p class="delivery-count-number" id="big-pollock-number"></p>
+  <p class="delivery-count-label">Regular Redfish:</p>
+  <p class="delivery-count-number" id="regular-redfish-number"></p>
+  <p class="delivery-count-label">Big Redfish:</p>
+  <p class="delivery-count-number" id="big-redfish-number"></p>
+  <p class="delivery-count-label">Regular Salmon:</p>
+  <p class="delivery-count-number" id="regular-salmon-number"></p>
+  <p class="delivery-count-label">Big Salmon:</p>
+  <p class="delivery-count-number" id="big-salmon-number"></p>
+  <p class="delivery-count-label">Regular Shad:</p>
+  <p class="delivery-count-number" id="regular-shad-number"></p>
+  <p class="delivery-count-label">Big Shad:</p>
+  <p class="delivery-count-number" id="big-shad-number"></p>
+  <p class="delivery-count-label">Small Sturgeon:</p>
+  <p class="delivery-count-number" id="small-sturgeon-number"></p>
+  <p class="delivery-count-label">Regular Sturgeon:</p>
+  <p class="delivery-count-number" id="regular-sturgeon-number"></p>
+  <p class="delivery-count-label">Big Sturgeon:</p>
+  <p class="delivery-count-number" id="big-sturgeon-number"></p>
+</div>
 
 
-<script src="../javascript/script.js"></script>
+<script src="../javascript/scriptfishing.js"></script>
 
 </html>

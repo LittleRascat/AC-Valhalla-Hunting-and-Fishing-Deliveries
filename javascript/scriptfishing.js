@@ -13,26 +13,26 @@ buttons.forEach((button) => {
 
 
 function addDelivery(countID, add1, add2, add3, buttonID1, buttonID2, buttonID3) {
-  let fish = 0;
+  let deliveryCount = 0;
   let add = [add1, add2, add3];
   let buttonID = [buttonID1, buttonID2, buttonID3];
 
   for (let i = 0; i < add.length; i++) {
     if (add[i] === 0) {break;}
-    fish += add[i];
+    deliveryCount += add[i];
 
     const content = document.querySelector(countID);
-    content.textContent = `${fish}`;
+    content.textContent = `${deliveryCount}`;
 
     let listenerVariable = document.getElementById(buttonID[i]);
     let deliveryStatus = 0;
 
     listenerVariable.addEventListener('click', () => {
       let statusChange = [-add[i], add[i]];
-      fish += statusChange[deliveryStatus];
+      deliveryCount += statusChange[deliveryStatus];
       deliveryStatus++;
       if (deliveryStatus === statusChange.length) {deliveryStatus = 0;}
-      content.textContent = `${fish}`;
+      content.textContent = `${deliveryCount}`;
     });
   }
 }
@@ -83,3 +83,6 @@ addDelivery('#big-shad-number', 1, 0, 0, 'flavor-1');
 addDelivery('#small-sturgeon-number', 5, 0, 0, 'farmer-4');
 addDelivery('#regular-sturgeon-number', 6, 0, 0, 'festival-4');
 addDelivery('#big-sturgeon-number', 2, 0, 0, 'scaling-1');
+
+
+addDelivery('#animal-bone-number', 2, 4, 5, 'fur-3', 'scrying-1', 'goblets-1');
