@@ -83,6 +83,3 @@ addDelivery('#big-shad-number', 1, 0, 0, 'flavor-1');
 addDelivery('#small-sturgeon-number', 5, 0, 0, 'farmer-4');
 addDelivery('#regular-sturgeon-number', 6, 0, 0, 'festival-4');
 addDelivery('#big-sturgeon-number', 2, 0, 0, 'scaling-1');
-
-
-addDelivery('#animal-bone-number', 2, 4, 5, 'fur-3', 'scrying-1', 'goblets-1');

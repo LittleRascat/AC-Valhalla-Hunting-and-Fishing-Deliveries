@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top: 16.7vw;
+  scroll-padding-top: clamp(6rem, 3.5rem + 12.5vw, 18.5rem);
 }
 
 
@@ -103,7 +103,7 @@ body {
   border: solid;
   border-width: 0px 0px 3px 0px;
   height: 20%;
-  font-size: clamp(1.35rem, 0.074rem + 2.02vw, 2.5rem);
+  font-size: clamp(1rem, 0.800rem + 1.0vw, 2.5rem);
   font-family: Hanalei Fill;
 }
 
@@ -111,7 +111,7 @@ button {
   border-width: 0px 0px 1px 0px;
   height: 20%;
   font-family: Hanalei Fill;
-  font-size: clamp(1.15rem, 0.207rem + 1.49vw, 2rem);
+  font-size: clamp(1rem, 0.207rem + 1.49vw, 2rem);
   background: cornsilk;
 }
 
@@ -129,12 +129,13 @@ button {
 
 #counts {
   display: grid;
-  grid-template-columns: repeat(2, 40vw 5vw);
+  grid-template-columns: repeat(2, 35vw 5vw);
   row-gap: 5px;
   column-gap: 5px;
-  font-size: clamp(1rem, 0.500rem + 2.50vw, 3.5rem);
+  font-size: clamp(1rem, 0.207rem + 1.49vw, 2rem);
   font-family: Hanalei Fill;
-  padding-left: 50px;
+  padding-left: 45px;
+  padding-bottom: 45px;
 }
 
 #first-div {
@@ -143,28 +144,22 @@ button {
 
 .fish-type {
   padding: 20px 30px 20px 30px;
-  font-size: 30px;
+  font-size: clamp(1rem, 0.500rem + 2.50vw, 3.5rem);
   font-family: Hanalei Fill;
 }
 
 .fish-location {
   padding: 10px 30px 20px 50px;
-  font-size: 25px;
+  font-size: clamp(1rem, 0.800rem + 1.0vw, 2.5rem);
   font-family: Hanalei Fill;
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 1080px) {
   #delivery-grid {
     grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(7, 30vw);
   }
-  .delivery-label {
-    font-size: clamp(1.3rem, -0.133rem + 3.08vw, 1.8rem);
-  }
-  button {
-    font-size: clamp(1rem, 0.284rem + 1.54vw, 1.25rem);
-  }
-  #counts {grid-template-columns: 35vw 5vw;}
+
 }
 
 @media (max-width: 740px){
@@ -172,24 +167,12 @@ button {
     grid-template-columns: repeat(2, 45vw);
     grid-template-rows: repeat(10, 45vw);
   }
-  .delivery-label {
-    font-size: clamp(1.3rem, 0.191rem + 3.48vw, 1.8rem);
-  }
-  button {
-    font-size: clamp(1.05rem, -0.024rem + 3.40vw, 1.55rem);
-  }
 }
 
 @media (max-width: 505px){
   #delivery-grid {
-    padding: 20px 0px 20px 0px;
     grid-template-columns: repeat(1, 75vw);
     grid-template-rows: repeat(20, 75vw);
   }
-  .delivery-label {
-    font-size: clamp(1.5rem, -0.230rem + 8.65vw, 2.5rem);
-  }
-  button {
-    font-size: clamp(1.25rem, -0.047rem + 6.49vw, 2rem);
-  }
+  #counts {grid-template-columns: 55vw 5vw;}
 }
